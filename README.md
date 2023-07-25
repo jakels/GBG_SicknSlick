@@ -1,9 +1,9 @@
 # Sick n' Slick - GreyBird Group Website Deployment
-This repo is hosting the website for sicknslick.co.uk & sicknslick.com
+This repo is hosting the website for sicknslick.co.uk & sicknslick.com, this repo / website is owned by GreyBird Group under the direction and managment of myself.
 
 
 
-### Root folder for the website. This folder contains bootstrap_assets, implementation & unique assets;
+### /GBG_SickNSlick/
         -"bootstrap_assets" is for assets relating to the bootstrap framework
         -"implementation" is the folder for our HTML file structure
         -"unqiue_assets" is for assets specifically created for this website such as custom JS, CSS & images.
@@ -15,3 +15,4 @@ This repo is hosting the website for sicknslick.co.uk & sicknslick.com
 
 ### /GBG_SickNSlick/unique_assets/js
         -carousel_wizard.js is a javascript asset that should be implemented into the page within a script tag at initialisation, its functions which create carousels within the page may be called at any point within the page
+        -navbar.js is a javascript asset that should be implemented at the point where the navbar would be located if hard coded into the page as it directly writes to the document as it is being loaded.
