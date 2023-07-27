@@ -30,9 +30,9 @@ var writeDOM = `
                     <li class="nav-item">
                     <a class="nav-link [active page insert contactus.html]" aria-current="page" href="contactus.html">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link [active page insert links.html]" aria-current="page" href="links.html">Links</a>
-                    </li>
+                    <!--<li class="nav-item">-->
+                    <!--<a class="nav-link [active page insert links.html]" aria-current="page" href="links.html">Links</a>-->
+                    <!--</li>-->
                 </ul>
             </div>
         </div>
