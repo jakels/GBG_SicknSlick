@@ -1,3 +1,5 @@
+// This javascript file writes the navbar to the page during load and should be inserted in a script tag at the desired navbar location in the doc
+
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 
@@ -20,8 +22,11 @@ var writeDOM = `
                     <a class="nav-link [active page insert gallery.html]" aria-current="page" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link [active page insert pressreleases.html]" aria-current="page" href="pressreleases.html">Press Releases</a>
+                    <a class="nav-link [active page insert reviews.html]" aria-current="page" href="reviews.html">Reviews</a>
                     </li>
+                    <!--<li class="nav-item">-->
+                    <!--<a class="nav-link [active page insert pressreleases.html]" aria-current="page" href="pressreleases.html">Press Releases</a>-->
+                    <!--</li>-->
                     <li class="nav-item">
                     <a class="nav-link [active page insert contactus.html]" aria-current="page" href="contactus.html">Contact Us</a>
                     </li>
@@ -43,6 +48,7 @@ writeDOM = writeDOM.replace("[active page insert gallery.html]", "");
 writeDOM = writeDOM.replace("[active page insert pressreleases.html]", "");
 writeDOM = writeDOM.replace("[active page insert contactus.html]", "");
 writeDOM = writeDOM.replace("[active page insert links.html]", "");
+writeDOM = writeDOM.replace("[active page insert reviews.html]", "");
 
 console.log(writeDOM);
 

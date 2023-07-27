@@ -1,28 +1,21 @@
+// This javascript file creates a carousel on the call of CreateCarousel(), this requires a DOM object to fill as it is not writing to the doc during load
+
 var carouselIndex = 0;
+var carouselIndexInsertPlace = "[cIndex]";
 
 var writeDOM_createCarousel = `
 <div class="col-md-5 order-md-1">
-    <div id="c` + carouselIndex + `" class="carousel slide mb-0" data-bs-ride="carousel" data-bs-theme="light" data-bs-interval="40000">
+    <div id="c` + carouselIndexInsertPlace + `" class="carousel slide mb-0" data-bs-ride="carousel" data-bs-theme="light" data-bs-interval="40000">
         <div class="carousel-indicators">
-        <button type="button" data-bs-target="#c` + carouselIndex + `" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#c` + carouselIndex + `" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#c` + carouselIndex + `" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        [bottomIndicators]
         </div>
         <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="[image1]"> 
-        </div>
-        <div class="carousel-item">
-            <img src="[image2]"> 
-        </div>
-        <div class="carousel-item">
-            <img src="[image3]"> 
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#c` + carouselIndex + `" data-bs-slide="prev">
+        [carouselItems]
+        <button class="carousel-control-prev" type="button" data-bs-target="#c` + carouselIndexInsertPlace + `" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#c` + carouselIndex + `" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#c` + carouselIndexInsertPlace + `" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
         </button>
@@ -30,11 +23,37 @@ var writeDOM_createCarousel = `
 </div>
 `;
 
-function CreateCarousel(image1, image2, image3, domElementID){
+function CreateCarousel(imagesArray, domElementID){
+        
+    var bottomIndicatorsString = ``;
+    var carouselItemsString = ``;
+
+    for (i = 0; i < imagesArray.length; i++) {
+        var currentImage = imagesArray[i];
+
+        
+        var extraClass = ``;
+
+        if(i==0){
+            extraClass = `active`;
+        }
+
+        bottomIndicatorsString += `<button type="button" data-bs-target="#c` + carouselIndex + `" data-bs-slide-to="` + i + `" class="`+ extraClass + `" aria-current="true" aria-label="Slide ` + (i+1) + `"></button>
+        `;
+
+        carouselItemsString += `
+        <div class="carousel-item ` + extraClass + `">
+            <img src="` + currentImage + `"> 
+        </div>
+        `;
+    }
+
+
+
     var copyString = writeDOM_createCarousel;
-    copyString = copyString.replace("[image1]", image1);
-    copyString = copyString.replace("[image2]", image2);
-    copyString = copyString.replace("[image3]", image3);
+    copyString = copyString.replace("[bottomIndicators]", bottomIndicatorsString);
+    copyString = copyString.replace("[carouselItems]", carouselItemsString);
+    copyString = copyString.replaceAll(carouselIndexInsertPlace, carouselIndex);
 
     document.getElementById(domElementID).innerHTML += copyString;
     carouselIndex += 1;
