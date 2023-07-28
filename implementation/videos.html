@@ -29,18 +29,25 @@
     <main>
       <br><br>
       <!--Title-->
-      <h1 style="text-align: center; color: white; margin-bottom: -3%;">Interesting Links</h1><br><br>
-      <p style="text-align: center; color: white; margin-bottom: -3%; color: lightgray;">Here is a few links we think you may find interesting!</p>
+      <h1 style="text-align: center; color: white; margin-bottom: -3%;">Our Videos</h1><br><br>
+      <p style="text-align: center; color: white; margin-bottom: -3%; color: lightgray;">These are some of our favourite videos taken from our <a href="https://www.youtube.com/@sicknslick4751">YouTube channel</a>.</p>
       <hr class="featurette-divider" style="margin-bottom: 1%;">
           
       <!--Gallery-->
       <div class="container marketing">
         <div class="row">
-          <p>We've got a collection of links which you may also find interest in from bike retailers and accessory stores.</p>
-          <a href="https://www.eddys-moto.co.uk/">&middot; Eddys Moto - Bike Dealer</a>
-          <a href="https://www.colinappleyard.com/">&middot; Colin Appleyard - Car & Bike Dealer</a>
-          <a href="https://hypermoto.co.uk/">&middot; HyperMoto - Bike Dealer</a>
-          <a href="https://jsaccessories.co.uk/">&middot; J&S Accessories - Equipment Retailer</a>
+          <p style="text-align: center;" id="loadingVideosPlaceholder">Loading YouTube videos...</p>
+          <iframe width="1233" height="694" src="https://www.youtube.com/embed/6NB826InOVQ" title="Yamaha Thundercat refurbishment by Sick n Slick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <hr>
+          <iframe width="1233" height="694" src="https://www.youtube.com/embed/SDH5gBsW8Pc" title="Scratch removal, Audi rear bumper, smart repair, Sick n Slick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <hr>
+          <iframe id="finalVideo" width="1233" height="694" src="https://www.youtube.com/embed/8J_n4y-ROz4" title="James captain sports 1963 tank restoration repaint and pin stripe by Sick n Slick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <hr>
+          <script>
+            document.getElementById('finalVideo').onload = function() {
+                document.getElementById("loadingVideosPlaceholder").remove();
+            }
+          </script>
         </div>
       </div>
 
