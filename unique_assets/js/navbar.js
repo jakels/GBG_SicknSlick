@@ -2,7 +2,9 @@
 
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
-
+if(filename.length < 2){
+    filename = "index.html";
+}
 
 var writeDOM = `
 
