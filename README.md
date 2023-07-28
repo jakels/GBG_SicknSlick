@@ -5,8 +5,9 @@ This repo is hosting the website for sicknslick.co.uk & sicknslick.com, this rep
 
 ### /GBG_SickNSlick/
         -"bootstrap_assets" is for assets relating to the bootstrap framework
-        -"implementation" is the folder for our HTML file structure
         -"unqiue_assets" is for assets specifically created for this website such as custom JS, CSS & images.
+        
+        -The folder also holds the html files which are at some point to be transferred to a new file structure.
 
 ### /GBG_SickNSlick/unique_assets
         -css is a folder that holds all CSS assets
