@@ -24,77 +24,60 @@
     <script src="/unique_assets/js/navbar.js"></script>
     <!--Javascript Utilities-->
     <script src="/unique_assets/js/carousel_wizard.js"></script>
+    <script src="/unique_assets/js/review_wizard.js"></script>
 
     <!--Main content of the home page contains a heading gallery along with more examples of work done by the company with text-->
     <main>
         <!--Start of the reviews-->
         <div class="container marketing">
           <br><br>
-          <h1 style="text-align: center; color: white; margin-bottom: -3%;">Google Reviews</h1><br><br>
-          <p style="text-align: center; color: white; margin-bottom: -3%; color: lightgray;">A compilation of reviews taken from the Google reviews page for SickNSlick. The opinions on here are those of the reviewing customers and do not represent SickNSlick.</p>
-          <hr class="featurette-divider">
-          <div class="row">
-            <div class="col-lg-4">
-              <h2 class="fw-normal">Gary Lawton</h2>
-              <p style="margin-top: -2%; color: goldenrod;">★★★★★</p>
-              <p>"My wife’s Fiat 500 had a scrape on the rear quarter. The guys did a stellar job and now it looks like new! It was done very quickly and at a reasonable price too! Thanks again guys!"</p><br><br>
-              <p><a class="btn btn-secondary" href="https://www.google.com/search?client=firefox-b-d&q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">See source &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-              <h2 class="fw-normal">Andrew Wild</h2>
-              <p style="margin-top: -2%; color: goldenrod;">★★★★★</p>
-              <p>"I had some body work done on my lads BMW, the boot was all out of line and a right mess. Took it to these guys they made a fantastic jod of pulling the boot out and the re-spray was brilliant you would never know there was anything wrong with it."</p><br>
-              <p><a class="btn btn-secondary" href="https://www.google.com/search?client=firefox-b-d&q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">See source &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-              <h2 class="fw-normal">Craigh Wild</h2>
-              <p style="margin-top: -2%; color: goldenrod;">★★★★★</p>
-              <p>"Absolutely fantastic job been done on my van very friendly service and excellent customer service thank you to all the staff highly recommended"</p><br><br><br>
-              <p><a class="btn btn-secondary" href="https://www.google.com/search?client=firefox-b-d&q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">See source &raquo;</a></p>
-            </div>
+          <h1 style="text-align: center; color: white; margin-bottom: -3%;">Our Reviews</h1><br><br>
+          <p style="text-align: center; color: white; margin-bottom: -3%; color: lightgray;">The reviews listed here are taken from Google reviews and Facebook reviews, you can see the sources yourselves for each review or by clicking on the two buttonns bellow for all reviews. The opinions on here are those of the reviewing customers and do not represent SickNSlick.</p>
+          <br>
+          <br>
+          <br>
+          <p style="text-align: center;"><a class="btn btn-secondary" href="https://www.google.com/search?q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">Google Reviews &raquo;</a> <a class="btn btn-secondary" href="https://www.facebook.com/SicknSlickPaintshop/reviews">Facebook Reviews &raquo;</a></p>
+          
+          <br>
+          <br>
+          <hr>
+          <div class="row" id="reviewRow1">
+            <script>CreateReview("My wife’s Fiat 500 had a scrape on the rear quarter. The guys did a stellar job and now it looks like new! It was done very quickly and at a reasonable price too! Thanks again guys!", "Gary Lawton", 5, source_GReviews, "reviewRow1");</script>
+            <script>CreateReview("I had some body work done on my lads BMW, the boot was all out of line and a right mess. Took it to these guys they made a fantastic jod of pulling the boot out and the re-spray was brilliant you would never know there was anything wrong with it.", "Andrew Wild", 5, source_GReviews, "reviewRow1");</script>
+            <script>CreateReview("Absolutely fantastic job been done on my van very friendly service and excellent customer service thank you to all the staff highly recommended", "Craigh Wild", 5, source_GReviews, "reviewRow1");</script>
           </div>
 
           <hr class="featurette-divider">
 
-          <div class="row">
-            <div class="col-lg-4">
-              <h2 class="fw-normal">Rodger Carter</h2>
-              <p style="margin-top: -2%; color: goldenrod;">★★★★★</p>
-              <p>"Excellent work on my car carried out by real helpful friendly staff. Well done"</p><br><br>
-              <p><a class="btn btn-secondary" href="https://www.google.com/search?client=firefox-b-d&q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">See source &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-              <h2 class="fw-normal">Simon Robinson</h2>
-              <p style="margin-top: -2%; color: goldenrod;">★★★★★</p>
-              <p>"Had my Toyota GT86 in for a paint job. Great Service & Great Price. Highly Recommend"</p><br>
-              <p><a class="btn btn-secondary" href="https://www.google.com/search?client=firefox-b-d&q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">See source &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-              <h2 class="fw-normal">Lee R</h2>
-              <p style="margin-top: -2%; color: goldenrod;">★★★★★</p>
-              <p>"These guys are craftsmen, highly recommend you use them! My car looks brand new and was very reasonably priced! 10/10"</p><br><br><br>
-              <p><a class="btn btn-secondary" href="https://www.google.com/search?client=firefox-b-d&q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">See source &raquo;</a></p>
-            </div>
+          <div class="row" id="reviewRow2">
+            <script>CreateReview("Excellent work on my car carried out by real helpful friendly staff. Well done", "Rodger Carter", 5, source_GReviews, "reviewRow2");</script>
+            <script>CreateReview("Had my Toyota GT86 in for a paint job. Great Service & Great Price. Highly Recommend", "Simon Robinson", 5, source_GReviews, "reviewRow2");</script>
+            <script>CreateReview("These guys are craftsmen, highly recommend you use them! My car looks brand new and was very reasonably priced! 10/10", "Lee R", 5, source_GReviews, "reviewRow2");</script>
           </div>
 
           <hr class="featurette-divider">
 
-          <div class="row">
-            <div class="col-lg-4">
-              <h2 class="fw-normal">Robert Copland</h2>
-              <p style="margin-top: -2%; color: goldenrod;">★★★★★</p>
-              <p>"These guys are excellent the service I received and the Quality of their word is brilliant"</p><br><br>
-              <p><a class="btn btn-secondary" href="https://www.google.com/search?client=firefox-b-d&q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">See source &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-              <h2 class="fw-normal">Simon</h2>
-              <p style="margin-top: -2%; color: goldenrod;">★★★★★</p>
-              <p>"Highly recommend did a fantastic job perfect finish 👍🏻"</p><br>
-              <p><a class="btn btn-secondary" href="https://www.google.com/search?client=firefox-b-d&q=sick+n+slick#lrd=0x48795f8ddfb6be95:0x3a35b4ba2a230461,1,,,,">See source &raquo;</a></p>
-            </div>
+          <div class="row" id="reviewRow3">
+            <script>CreateReview("These guys are excellent the service I received and the Quality of their word is brilliant", "Robert Copland", 5, source_GReviews, "reviewRow3");</script>
+            <script>CreateReview("Highly recommend did a fantastic job perfect finish 👍🏻", "Simon", 5, source_GReviews, "reviewRow3");</script>
+            <script>CreateReview("Absolutely amazed at the work done on my car after crashing into a bollard. Car now back to original condition. I would highly recommend. Fantastic value. Hopefully I won't ever have to use again, however if I did I would ring this company straight away thanks again", "Gemma Wood", 5, source_GReviews, "reviewRow3");</script>
+
           </div>
 
           <hr class="featurette-divider">
+
+          <div class="row" id="reviewRow4">
+            <script>CreateReview("My experience with Sick N Slick was extremely good from first contacting them for a quote to getting my car repaired, it all went very smoothely with no issues and no added costs at the end. I would recommend this company to everybody who needs a vehicle repaired", "Callie Witts", 5, source_FBReviews, "reviewRow4");</script>
+            <script>CreateReview("Top quality work by the Sick N Slick team! Painted & fitted full M performance kit to my car not only does it look great! It looks like it left the factory with it on! Couldn’t recommend them enough!", "Mark Rushforth", 5, source_FBReviews, "reviewRow4");</script>
+            <script>CreateReview("Steve and the team did an amazing job at repairing a bump on my car and fixing my tyre. Went above and beyond to help me out. Great service. Highly recommend.", "Lionel Marcus", 5, source_FBReviews, "reviewRow4");</script>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row" id="reviewRow5">
+            <script>CreateReview("These guys are amazing I bumped my son's car, they repaired it and the work was outstanding would highly recommend them.", "Rachel Pullan", 5, source_FBReviews, "reviewRow5");</script>
+            <script>CreateReview("Cannot recommend Sick N Slick enough! They managed to fit my car in ASAP for damage on my bumper and whilst I was there they also quoted for damage on passenger door. The passenger door damage got fixed the same day without any notice before hand! The finish is incredible (even better than Mercedes, as they fixed their mistakes…) You cannot even tell any work has been done on the bumper or the passenger door.", "Leah Mary Moore", 5, source_FBReviews, "reviewRow5");</script>
+          </div>
 
         </div>
 

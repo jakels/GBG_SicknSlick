@@ -1,7 +1,7 @@
 // This javascript file creates a carousel on the call of CreateCarousel(), this requires a DOM object to fill as it is not writing to the doc during load
 
-var carouselIndex = 0;
-var carouselIndexInsertPlace = "[cIndex]";
+var carouselIndex = 0; // A unique number for each carousel used for the purpose of generating unique ID's
+var carouselIndexInsertPlace = "[cIndex]"; // The placeholder which will be replaced by a generated carousel ID using the carousel index
 
 var writeDOM_createCarousel = `
 <div class="col-md-5 order-md-1">
@@ -21,7 +21,7 @@ var writeDOM_createCarousel = `
         </button>
     </div>
 </div>
-`;
+`; // The carousel pretext
 
 function CreateCarousel(imagesArray, domElementID){
         
