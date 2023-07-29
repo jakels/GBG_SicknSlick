@@ -21,7 +21,7 @@ var writeDOM_createCarousel = `
         </button>
     </div>
 </div>
-`; // The carousel pretext
+`; // The carousel html to be filled with dynamic content
 
 function CreateCarousel(imagesArray, domElementID){
         
