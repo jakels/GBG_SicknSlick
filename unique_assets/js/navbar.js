@@ -41,7 +41,7 @@ var writeDOM = `
                 </ul>
             </div>
             <div style="margin-right : 0px;">
-                <p style="text-align:left;">Visitor #[visNum]</p>
+                <p style="text-align:left;">[visNum]</p>
             </div>
         </div>
     </nav>
@@ -58,11 +58,16 @@ writeDOM = writeDOM.replace("[active page insert links.html]", "");
 writeDOM = writeDOM.replace("[active page insert reviews.html]", "");
 writeDOM = writeDOM.replace("[active page insert videos.html]", "");
 
-if(filename == "index.html"){
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/analytics_core.php?property=sicknslick&modify=1&analytic=analytic_visits&mode=raw", false ); // false for synchronous request
-    xmlHttp.send( null );
-    writeDOM = writeDOM.replace("[visNum]", xmlHttp.responseText);
+try{
+    if(filename == "index.html"){
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/analytics_core.php?property=sicknslick&modify=1&analytic=analytic_visits&mode=raw", false ); // false for synchronous request
+        xmlHttp.send( null );
+        writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
+    }
+}
+catch{
+    writeDOM = writeDOM.replace("[visNum]", "");
 }
 
 console.log(writeDOM);
