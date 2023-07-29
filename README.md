@@ -4,7 +4,7 @@ This repo is for the website at https://sicknslick.co.uk which is being hosted b
 
 
 
-# /GBG_SickNSlick/
+## /GBG_SickNSlick/
 | Folder Name | Description |
 | ----------- | ----------- |
 | bootstrap_assets | for assets relating to the bootstrap framework |
