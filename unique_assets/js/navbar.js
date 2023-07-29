@@ -65,7 +65,10 @@ try{
         xmlHttp.send( null );
         writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
     }else{
-        writeDOM = writeDOM.replace("[visNum]", "");
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/analytics_core.php?property=sicknslick&modify=0&analytic=analytic_visits&mode=raw", false ); // false for synchronous request
+        xmlHttp.send( null );
+        writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
     }
 }
 catch{
