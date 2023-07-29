@@ -58,6 +58,9 @@ writeDOM = writeDOM.replace("[active page insert links.html]", "");
 writeDOM = writeDOM.replace("[active page insert reviews.html]", "");
 writeDOM = writeDOM.replace("[active page insert videos.html]", "");
 
+writeDOM = writeDOM.replace("[visNum]", "");
+
+/*
 try{
     if(filename == "index.html"){
         var xmlHttp = new XMLHttpRequest();
@@ -74,7 +77,7 @@ try{
 catch{
     writeDOM = writeDOM.replace("[visNum]", "");
 }
-
+*/
 console.log(writeDOM);
 
 document.write(writeDOM);
