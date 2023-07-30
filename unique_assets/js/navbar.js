@@ -40,9 +40,9 @@ var writeDOM = `
                     </li>
                 </ul>
             </div>
-            <div style="margin-right : 0px;">
-                <p style="text-align:left;">[visNum]</p>
-            </div>
+            <!--<div style="margin-right : 0px;">-->
+                <!--<p style="text-align:left;">[visNum]</p>-->
+            <!--</div>-->
         </div>
     </nav>
 </header>
