@@ -64,12 +64,12 @@ writeDOM = writeDOM.replace("[visNum]", "");
 try{
     if(filename == "index.html"){
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/ultra_simple.php?property=sicknslick", false );
+        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/ultra_simple.php?property=sicknslick&only_read=0", false );
         xmlHttp.send( null );
         //writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
     }else{
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/ultra_simple.php?property=sicknslick", false );
+        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/ultra_simple.php?property=sicknslick&only_read=0", false );
         xmlHttp.send( null );
         //writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
     }
