@@ -60,24 +60,22 @@ writeDOM = writeDOM.replace("[active page insert videos.html]", "");
 
 writeDOM = writeDOM.replace("[visNum]", "");
 
-/*
+
 try{
     if(filename == "index.html"){
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/analytics_core.php?property=sicknslick&modify=1&analytic=analytic_visits&mode=raw", false ); // false for synchronous request
+        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/ultra_simple.php?property=sicknslick", false );
         xmlHttp.send( null );
-        writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
+        //writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
     }else{
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/analytics_core.php?property=sicknslick&modify=0&analytic=analytic_visits&mode=raw", false ); // false for synchronous request
+        xmlHttp.open("GET", "https://simple-analytics-d230138f5c63.herokuapp.com/ultra_simple.php?property=sicknslick", false );
         xmlHttp.send( null );
-        writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
+        //writeDOM = writeDOM.replace("[visNum]","Visitor #" + xmlHttp.responseText);
     }
 }
 catch{
-    writeDOM = writeDOM.replace("[visNum]", "");
+    //writeDOM = writeDOM.replace("[visNum]", "");
 }
-*/
-console.log(writeDOM);
 
 document.write(writeDOM);
