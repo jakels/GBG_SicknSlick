@@ -41,10 +41,14 @@
         <p style="text-align: center; color: white; margin-bottom: -3%; color: lightgray;">See bellow details on how to find us or how to contact us by Email or Phone. We're very friendly and can likely give you some ball park numbers over the phone.</p>
         <hr class="featurette-divider" style="margin-bottom: 1%;">
         <div class="row">
-          <div style="text-decoration:none; overflow:hidden;max-width:100%;height:500px;"><div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;"><div id="loadingMapsPlaceholder"><br><br><br><br><br><br><br><br><br><p style="text-align: center;">Loading Google Maps...</p></div><iframe style="height:100%;width:100%;border:0;" id="googleMapsIframe" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Sunshine+Mills,+Wortley+Road,+Armley,+Leeds,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#canvas-for-googlemap img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+          <div id="loadingMapsPlaceholder"><div style="height: 250px;"></div><p style="text-align: center;">Loading Google Maps...</p><div style="height: 250px;"></div></div>
+          <iframe id="googleMapsIframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9426.508356765833!2d-1.5985549!3d53.7961244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795f8ddfb6be95%3A0x3a35b4ba2a230461!2sSick%20n%20Slick%20Paint%20Shop!5e0!3m2!1sen!2suk!4v1692045005331!5m2!1sen!2suk" style="max-width: 100%; height: 540px; display: none;" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
           <script>
             document.getElementById('googleMapsIframe').onload = function() {
                 document.getElementById("loadingMapsPlaceholder").remove();
+                document.getElementById('googleMapsIframe').style.display = "block";
             }
           </script>
           <p>You can find our shop at Unit A1, Sunshine Mills, Wortley Road, Armley, Leeds, LS12 3HT. We recently moved over from unit A5 to get more space so remember to visit our new address!</p>

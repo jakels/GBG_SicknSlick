@@ -1,3 +1,20 @@
+html {
+  animation: fadeInAnimation ease 1s; /* If debug change to 0 */
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      filter: brightness(0);
+      opacity: 0;
+  }
+  100% {
+      filter: brightness(1);
+      opacity: 1;
+  }
+}
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -85,4 +102,8 @@
 
   p{
     color: lightgray;
+  }
+
+  .drop_shadow_contrast{
+    filter: drop-shadow(0rem 0.4rem 1rem black) drop-shadow(0rem 0.4rem 0.75rem black) drop-shadow(0rem 0.4rem 0.5rem black) drop-shadow(0rem 0.4rem 0.25rem black);
   }
