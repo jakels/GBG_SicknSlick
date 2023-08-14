@@ -5,18 +5,18 @@ This repo is for the website at https://sicknslick.co.uk which is being hosted b
 
 
 ## /GBG_SickNSlick/
-| Folder Name | Description |
-| ----------- | ----------- |
+| Folder Name      | Description |
+|------------------| ----------- |
 | bootstrap_assets | for assets relating to the bootstrap framework |
-| unqiue_assets | for assets specifically created for this website such as custom JS, CSS & images. |
+| unique_assets    | for assets specifically created for this website such as custom JS, CSS & images. |
 - The folder also holds the html files which are at some point to be transferred to a new file structure.
 
 ## /GBG_SickNSlick/unique_assets
-| Folder Name | Description |
-| ----------- | ----------- |
-| css | for any CSS assets used in the site. |
-| images | holds all images and is split into a few sub folders of catagories. |
-| js | for any Javascript assets used in the site. |
+| Folder Name | Description                                                         |
+| ----------- |---------------------------------------------------------------------|
+| css | for any CSS assets used in the site.                                |
+| images | holds all images and is split into a few sub folders of categories. |
+| js | for any Javascript assets used in the site.                         |
 
 ## /GBG_SickNSlick/unique_assets/js
 | File Name | Description |
