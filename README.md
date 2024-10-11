@@ -1,6 +1,9 @@
 # Sick n' Slick - GreyBird Group Website Deployment
 
-This repo is for the website at https://sicknslick.co.uk which is being hosted by Github Pages from the main branch. The site was created by myself acting as part of GreyBird Marketing Group.
+## NOTICE : Retired Project - Business owner retired
+The business owner of SickNSlick.co.uk has retired and so this page is no longer published.
+
+This repo is for the website at https://sicknslick.co.uk which is being hosted by Github Pages from the main branch. Created as part of a project called GreyBird Group whcih was a group working on creating websites for Leeds based businesses.
 
 
 
